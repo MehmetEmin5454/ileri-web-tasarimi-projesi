@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler | TechMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <h1>Tech<span>Market</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="urunler.html" class="active">Ürünler</a></li>
+                    <li><a href="sepet.html">Sepetim (<span id="sepet-sayac">0</span>)</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="dark-mode-btn">🌙 Mod</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container urunler-container">
+        <aside class="filtre-paneli">
+            <h3>Arama & Filtreleme</h3>
+            
+            <div class="filtre-grup">
+                <input type="text" id="arama-kutusu" placeholder="Ürün ara...">
+            </div>
+
+            <div class="filtre-grup">
+                <h4>Kategoriler</h4>
+                <button class="kategori-btn aktif" data-kategori="hepsi">Hepsi</button>
+                <button class="kategori-btn" data-kategori="telefon">Telefon</button>
+                <button class="kategori-btn" data-kategori="bilgisayar">Bilgisayar</button>
+                <button class="kategori-btn" data-kategori="aksesuar">Aksesuar</button>
+            </div>
+        </aside>
+
+        <section class="urun-galerisi">
+            <h2 class="sayfa-basligi">Tüm Ürünlerimiz</h2>
+            <div class="urunler-grid" id="urunler-alanı">
+                </div>
+        </section>
+    </main>
+
+    <div id="urun-modal" class="modal">
+        <div class="modal-icerik">
+            <span class="modal-kapat">&times;</span>
+            <div id="modal-detay">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 TechMarket. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

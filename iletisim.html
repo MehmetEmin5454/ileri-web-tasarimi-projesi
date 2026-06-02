@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | TechMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <h1>Tech<span>Market</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="sepet.html">Sepetim (<span id="sepet-sayac">0</span>)</a></li>
+                    <li><a href="iletisim.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="dark-mode-btn">🌙 Mod</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container iletisim-container">
+        <div class="iletisim-kart">
+            <h2>Bizimle İletişime Geçin</h2>
+            <p class="form-aciklama">Sorularınız veya geri bildirimleriniz için aşağıdaki formu kullanabilirsiniz.</p>
+            
+            <form id="iletisim-formu" novalidate>
+                <div class="form-grup">
+                    <label for="ad-soyad">Ad Soyad</label>
+                    <input type="text" id="ad-soyad" placeholder="Adınızı ve soyadınızı giriniz">
+                    <small class="hata-mesaji">Bu alan boş bırakılamaz.</small>
+                </div>
+                <div class="form-grup">
+                    <label for="eposta">E-Posta Adresi</label>
+                    <input type="email" id="eposta" placeholder="E-posta adresinizi giriniz">
+                    <small class="hata-mesaji">Lütfen geçerli bir e-posta adresi giriniz.</small>
+                </div>
+                <div class="form-grup">
+                    <label for="mesaj-konu">Konu</label>
+                    <input type="text" id="mesaj-konu" placeholder="Mesajınızın konusu">
+                    <small class="hata-mesaji">Lütfen bir konu başlığı giriniz.</small>
+                </div>
+                <div class="form-grup">
+                    <label for="mesaj-icerik">Mesajınız</label>
+                    <textarea id="mesaj-icerik" rows="5" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                    <small class="hata-mesaji">Mesaj alanı en az 10 karakter olmalıdır.</small>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Mesajı Gönder</button>
+            </form>
+
+            <div id="basari-mesaji" class="basari-kutusu">
+                🎉 Mesajınız başarıyla gönderildi! En kısa sürede dönüş sağlayacağız.
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 TechMarket. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | TechMarket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <h1>Tech<span>Market</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="sepet.html" class="active">Sepetim (<span id="sepet-sayac">0</span>)</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="dark-mode-btn">🌙 Mod</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container sepet-container">
+        <h2>Alışveriş Sepetiniz</h2>
+        <div class="sepet-isleyis">
+            <div id="sepet-listesi" class="sepet-listesi"></div>
+            <aside class="sepet-ozet">
+                <h3>Sepet Özeti</h3>
+                <div class="ozet-detay">
+                    <p>Toplam Ürün: <span id="toplam-adet">0</span></p>
+                    <p class="toplam-fiyat">Genel Toplam: <span id="sepet-toplam">0</span> TL</p>
+                </div>
+                <button id="sepeti-bosalt-btn" class="btn" style="background-color: #ef4444; width: 100%;">Sepeti Boşalt</button>
+                <button class="btn" style="background-color: #10b981; width: 100%; margin-top: 10px;" onclick="siparisTamamla()">Alışverişi Tamamla</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 TechMarket. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
